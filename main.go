@@ -98,13 +98,17 @@ func main() {
 				maxLen = len(password)
 			}
 			separator := strings.Repeat("=", maxLen+10)
+			fmt.Println()
 			fmt.Println(separator)
+			fmt.Println()
 			fmt.Println("PPPoE 认证信息")
 			fmt.Println()
 			fmt.Printf("用户名: %s\n", username)
 			fmt.Printf("密码: %s\n", password)
+			fmt.Println()
 			fmt.Println(separator)
 		}
+		fmt.Println()
 		fmt.Print("按回车键继续...")
 		reader.ReadString('\n')
 	}

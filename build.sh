@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
+set -e
+export GOPATH=`pwd`/bin
 go get github.com/rakyll/statik
-statik -src deps
-go build -o bin/pppoe-sim.exe pppoe-sim
+./bin/bin/statik -src deps
+go build -o bin/pppoe-sim pppoe-sim
